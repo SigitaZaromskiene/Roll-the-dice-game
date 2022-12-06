@@ -6,6 +6,7 @@ body .container {
 
 body .containers {
   margin: 0px 30px 0px 30px;
+  position: relative;
 }
 .containers .left {
   border-top-left-radius: 20px;
@@ -45,7 +46,7 @@ body .containers {
 
 .container > .current-points-box {
   background-color: var(--color-2);
-  padding: 30px 80px;
+  padding: 20px 70px;
   border-radius: 15px;
   color: white;
 }
