@@ -14,6 +14,10 @@ body * {
 body {
   font-family: "Gill Sans", "Gill Sans MT", "Gill Sans", "Gill Sans MT", Calibri,
     sans-sarif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body > .blur-background {
@@ -29,8 +33,61 @@ body > .blur-background {
 }
 
 body > .containers {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+@media (max-width: 1042px) {
+  body .container {
+    width: 440px;
+  }
+}
+
+@media (max-width: 905px) {
+  body .container {
+    width: 380px;
+  }
+}
+
+@media (max-width: 780px) {
+  body .container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 630px) {
+  body .container {
+    width: 240px;
+  }
+  .containers > .container {
+    gap: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    margin-top: 30px;
+  }
+  body .containers {
+    display: flex;
+    flex-direction: column;
+  }
+  body .container {
+    height: 320px;
+    width: 400px;
+  }
+
+  .containers .container {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  body .container {
+    width: 300px;
+  }
 }
