@@ -1,0 +1,145 @@
+.new {
+  content: "New game";
+  display: inline-block;
+  position: absolute;
+  top: 4em;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.651);
+  padding: 0.5em 1.7em;
+  border-radius: 1.4em;
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.roll {
+  content: "Roll dice";
+  display: inline-block;
+  position: absolute;
+  top: 21.5em;
+  background-color: rgba(255, 255, 255, 0.651);
+  padding: 0.5em 1.7em;
+  border-radius: 1.4em;
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.hold {
+  content: "Hold";
+  display: inline-block;
+  position: absolute;
+  top: 25em;
+  background-color: rgba(255, 255, 255, 0.651);
+  padding: 0.5em 1.7em;
+  border-radius: 1.4em;
+  font-size: 18px;
+  color: black;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.new:hover,
+.roll:hover,
+.hold:hover {
+  box-shadow: 5px 6px 2px rgba(80, 70, 70, 0.499);
+}
+
+@media (max-width: 905px) {
+  .new,
+  .roll,
+  .hold {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .new {
+    top: 4em;
+  }
+  .roll {
+    top: 24em;
+  }
+  .hold {
+    top: 29em;
+  }
+}
+
+@media (max-width: 780px) {
+  .new {
+    top: 2em;
+  }
+  .roll {
+    top: 20em;
+  }
+  .hold {
+    top: 25em;
+  }
+}
+
+@media (max-width: 630px) {
+  .new {
+    top: 1em;
+  }
+  .roll {
+    top: 16em;
+  }
+  .hold {
+    top: 21em;
+  }
+}
+
+@media (max-width: 500px) {
+  .new,
+  .roll,
+  .hold {
+    font-size: 16px;
+    border-radius: 5%;
+    padding: 20px 7px;
+  }
+  .new {
+    top: -6em;
+    left: 0em;
+  }
+  .roll {
+    top: -6em;
+    left: 11em;
+  }
+  .hold {
+    top: -6em;
+    right: 0em;
+  }
+}
+
+@media (max-width: 430px) {
+  .new {
+    top: -6em;
+    left: 0em;
+  }
+  .roll {
+    top: -6em;
+    left: 7.5em;
+  }
+  .hold {
+    top: -6em;
+    right: 0em;
+  }
+}
+
+@media (max-width: 335px) {
+  .new {
+    top: -5em;
+    left: 0em;
+  }
+  .roll {
+    top: -5em;
+    left: 8em;
+  }
+  .hold {
+    top: -5em;
+    right: 0em;
+  }
+}
