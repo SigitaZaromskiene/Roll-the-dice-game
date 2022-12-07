@@ -7,4 +7,14 @@ const containerRight = document.querySelector(".right");
 const btnRoll = document.querySelector(".roll");
 const btnNew = document.querySelector(".new");
 const btnHold = document.querySelector(".hold");
-const dice = document.querySelector(".dice");
+const dicePic = document.querySelector(".dice");
+
+player1Points.textContent = 0;
+player2Points.textContent = 0;
+dicePic.classList.add("hidden");
+
+btnRoll.addEventListener("click", function () {
+  const dice = Math.trunc(Math.random() * 6) + 1;
+  dicePic.classList.remove("hidden");
+  dicePic.src = `./img/dice-${dice}.png`;
+});
