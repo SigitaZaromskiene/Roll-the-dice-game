@@ -105,3 +105,10 @@ body .containers {
     border-bottom-right-radius: 2px;
   }
 }
+
+.dice {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 150px;
+}
