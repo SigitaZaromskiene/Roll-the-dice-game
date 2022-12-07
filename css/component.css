@@ -62,6 +62,26 @@ body .containers {
   text-align: center;
 }
 
+.containers .hidden {
+  display: none;
+  background-color: black;
+  color: red;
+  animation-name: winner;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes winner {
+  0% {
+    color: black;
+    transform: scale(0);
+  }
+  50% {
+    background-color: red;
+    transform: scale(1.2);
+  }
+}
+
 @media (max-width: 1042px) {
   .container > .current-points-box {
     padding: 10px 55px;
@@ -84,4 +104,11 @@ body .containers {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 2px;
   }
+}
+
+.dice {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 150px;
 }

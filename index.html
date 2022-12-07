@@ -41,16 +41,26 @@
       <div class="container left">
         <div class="player-main-points">
           <h1>Player 1</h1>
-          <h2>0</h2>
+          <h2 class="player-1-points">0</h2>
         </div>
         <div class="current-points-box">
           <p class="current">Current</p>
-          <p>0</p>
+          <p class="player-1-current">0</p>
         </div>
       </div>
       <div class="container right">
         <div class="player-main-points">
           <h1>Player 2</h1>
+          <h2 class="player-2-points">0</h2>
+        </div>
+        <div class="current-points-box">
+          <p class="current">Current</p>
+          <p class="player-2-current">0</p>
+        </div>
+      </div>
+      <div class="container hidden">
+        <div class="player-main-points">
+          <h1>Player 1</h1>
           <h2>0</h2>
         </div>
         <div class="current-points-box">
@@ -58,9 +68,11 @@
           <p>0</p>
         </div>
       </div>
+      <img src="./img/dice-1.png" alt="Dice 1" class="dice" />
       <button class="btn new">New game</button>
       <button class="btn roll">Roll dice</button>
       <button class="btn hold">Hold</button>
     </div>
+    <script src="game-logic.js"></script>
   </body>
 </html>

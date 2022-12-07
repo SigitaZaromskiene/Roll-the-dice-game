@@ -46,7 +46,8 @@
 .new:hover,
 .roll:hover,
 .hold:hover {
-  box-shadow: 5px 6px 2px rgba(80, 70, 70, 0.499);
+  box-shadow: 0 3px 6px rgba(80, 70, 70, 0.499);
+  transition: all 1s;
 }
 
 @media (max-width: 905px) {
@@ -85,10 +86,10 @@
     top: 1em;
   }
   .roll {
-    top: 16em;
+    top: 19em;
   }
   .hold {
-    top: 21em;
+    top: 22em;
   }
 }
 
@@ -106,26 +107,44 @@
   }
   .roll {
     top: -6em;
-    left: 11em;
+    left: 8em;
   }
   .hold {
     top: -6em;
-    right: 0em;
+    right: 6em;
+  }
+  .dice {
+    top: -6em;
+    right: -1em;
+    height: 80px;
+    width: 80px;
   }
 }
 
 @media (max-width: 430px) {
+  body {
+    margin-top: 0px;
+  }
+  .containers {
+    margin-top: 110px;
+  }
+  .dice {
+    top: -6em;
+    right: -2em;
+    height: 80px;
+    width: 80px;
+  }
   .new {
     top: -6em;
-    left: 0em;
+    left: -2em;
   }
   .roll {
     top: -6em;
-    left: 7.5em;
+    left: 5em;
   }
   .hold {
     top: -6em;
-    right: 0em;
+    right: 3.5em;
   }
 }
 
