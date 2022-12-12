@@ -1,6 +1,6 @@
 # Roll the dice game
 
-_website design project_
+_Game for two persons_
 
 <br>
 
