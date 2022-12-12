@@ -66,6 +66,10 @@ body .container.active {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .container3 {
   background-color: black;
   color: red;
