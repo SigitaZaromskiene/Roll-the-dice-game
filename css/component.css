@@ -1,7 +1,7 @@
 body .container {
   height: 600px;
   width: 500px;
-  background-color: var(--color-1);
+  background-color: var(--color-2);
 }
 
 body .containers {
@@ -15,7 +15,10 @@ body .containers {
 .containers .right {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: rgb(179, 88, 103);
+}
+
+body .container.active {
+  background-color: var(--color-1);
 }
 
 .containers > .container {
@@ -48,6 +51,7 @@ body .containers {
   padding: 20px 70px;
   border-radius: 15px;
   color: white;
+  border: 1px solid black;
 }
 
 .container > .current-points-box > .current {
