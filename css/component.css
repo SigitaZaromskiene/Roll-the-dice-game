@@ -43,7 +43,7 @@ body .container.active {
   font-family: sans-serif;
   font-weight: 500;
   text-align: center;
-  color: var(--color-2);
+  color: white;
 }
 
 .container > .current-points-box {
@@ -66,13 +66,13 @@ body .container.active {
   text-align: center;
 }
 
-.containers .hidden {
-  display: none;
+.container3 {
   background-color: black;
   color: red;
   animation-name: winner;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  max-width: 90%;
 }
 
 @keyframes winner {
@@ -82,7 +82,7 @@ body .container.active {
   }
   50% {
     background-color: red;
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }
 
