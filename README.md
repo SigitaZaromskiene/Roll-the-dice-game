@@ -1,7 +1,9 @@
 # Roll the dice game
 
 _Game for two persons_
-_First one reached 100 points wins the game_
+
+
+##First one reached 100 points wins the game
 
 <br>
 
