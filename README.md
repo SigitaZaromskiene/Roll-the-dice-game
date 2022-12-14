@@ -3,7 +3,7 @@
 _Game for two persons_
 
 
-##First one reached 100 points wins the game
+## First one reached 100 points wins the game
 
 <br>
 
