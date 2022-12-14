@@ -20,7 +20,8 @@ This project is for educational porpuses only.
 - HTML
 - CSS classes
 - Media queries
-- Javascript logic
+- JavaScript logic
+- DOM
 - Animation
 
 ## 🧪 Running tests
