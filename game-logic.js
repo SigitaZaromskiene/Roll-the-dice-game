@@ -38,11 +38,14 @@ btnRoll.addEventListener("click", function () {
     dicePic.src = `./img/dice-${dice}.png`;
 
     if (dice !== 1) {
+      console.log("currentScore", currentScore);
+      currentScore += dice;
       document.querySelector(`.player-current-${activePlayer}`).textContent =
-        currentScore += dice;
+        currentScore;
     } else {
       document.querySelector(`.player-current-${activePlayer}`).textContent = 0;
       activePlayer = activePlayer === 0 ? 1 : 0;
+      currentScore = 0;
       containerLeft.classList.toggle("active");
       containerRight.classList.toggle("active");
     }
@@ -51,8 +54,10 @@ btnRoll.addEventListener("click", function () {
 
 btnHold.addEventListener("click", function () {
   if (playing) {
+    scores[activePlayer] += currentScore;
     document.querySelector(`.player-points-${activePlayer}`).textContent =
-      scores[activePlayer] += currentScore;
+      scores[activePlayer];
+
     document.querySelector(`.player-current-${activePlayer}`).textContent = 0;
 
     if (scores[activePlayer] >= 100) {
@@ -61,13 +66,14 @@ btnHold.addEventListener("click", function () {
       document
         .querySelector(`.container--${activePlayer}`)
         .classList.add("container3");
-      document.querySelector(`.player-${activePlayer}`).textContent =
-        "Winner!!!";
+
       document
         .querySelector(`.container--${activePlayer}`)
         .classList.remove("active");
     }
 
+    document.querySelector(`.player-current-${activePlayer}`).textContent = 0;
+    currentScore = 0;
     activePlayer = activePlayer === 0 ? 1 : 0;
     containerLeft.classList.toggle("active");
     containerRight.classList.toggle("active");
