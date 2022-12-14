@@ -5,7 +5,7 @@ _Game for two persons_
 
 ## First one reached 100 points wins the game 🎲
 
-## Be carefull - if you roll dice 1, you loose all your points ⛔
+## Be carefull - if you roll dice 1, you loose your current points ⛔
 
 
 <br>
